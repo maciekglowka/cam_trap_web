@@ -1,0 +1,21 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" type="text/css" href="/static/main.css" />
+</head>
+<body>
+    <h1>RustCam</h1>
+     <form method="post" action="/logout">
+            <input type="submit" value="Logout" />
+    </form>
+    <div id="thumb_container">
+        {% for img in image_paths %}
+        <div class="thumb">
+            <a href="/media/{{ img }}"><img src="/media/{{ img }}" /></a>
+            <span class="caption">{{ img }}</a>
+            <span class="caption"><a href="/remove?path={{ img }}">Usuń</a></span>
+        </div>
+        {% endfor %}
+    </div>
+</body
+</html>

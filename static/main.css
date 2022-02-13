@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+}
+
+#thumb_container {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.thumb {
+    margin:16px;
+}
+
+.thumb img {
+    width:300px;
+    height:auto;
+    display: block;
+}
+
+.caption {
+    display: block;
+    margin-top:8px;
+    width: 100%;
+    text-align: center;
+}
